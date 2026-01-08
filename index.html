@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejesshvi VS | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Modern Dark Theme Styling */
+        :root {
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .highlight { color: var(--accent); }
+        .title-tag { font-size: 1.2rem; color: var(--text-dim); margin-bottom: 20px; }
+
+        section { margin-bottom: 40px; }
+        h2 { border-bottom: 2px solid var(--accent); display: inline-block; margin-bottom: 20px; }
+
+        /* Grid for Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .skill-card h3 { font-size: 1rem; margin-bottom: 5px; color: var(--accent); }
+
+        /* Project Styling */
+        .project-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover { transform: translateY(-5px); }
+
+        .tag {
+            display: inline-block;
+            background: #0ea5e933;
+            color: var(--accent);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+
+        /* Contact Section */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contact-links a { color: var(--text-main); text-decoration: none; transition: 0.3s; }
+        .contact-links a:hover { color: var(--accent); }
+
+        footer { text-align: center; padding: 40px; color: var(--text-dim); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hi, I'm <span class="highlight">Tejesshvi VS</span></h1>
+            <p class="title-tag">Data Scientist | Machine Learning Enthusiast</p>
+            <p>📍 Coimbatore, Tamil Nadu</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an aspiring Data Scientist currently pursuing an Integrated MSc in Data Science at <strong>Amrita Vishwa Vidyapeetham</strong>. I thrive at the intersection of mathematics and technology, with a particular interest in Reinforcement Learning and its applications in digital ecosystems. I aim to transform complex data into actionable insights that drive growth and optimize user experiences.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Core Tech</h3>
+                    <p>Python, R, Reinforcement Learning, Machine Learning</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>TensorFlow, PyTorch, Git, Jupyter, Streamlit, Pandas</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Databases</h3>
+                    <p>SQL (MySQL, PostgreSQL), Tableau, Matplotlib</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Project</h2>
+            <div class="project-card">
+                <h3>Social Media Growth Analysis</h3>
+                <p>Developing a computational Reinforcement Learning model to analyze and predict user engagement patterns. Treating social media interactions as a reward-based environment to optimize content reach.</p>
+                <div class="tags">
+                    <span class="tag">#ReinforcementLearning</span>
+                    <span class="tag">#Python</span>
+                    <span class="tag">#Analytics</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="project-card" style="border-left: 4px solid var(--accent);">
+                <h3>Integrated MSc in Data Science</h3>
+                <p>Amrita Vishwa Vidyapeetham, Coimbatore</p>
+                <p style="color: var(--text-dim);">2022 — 2027</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-links">
+                <a href="mailto:tejesshvivs@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/tejesshvi-vs-b3b4a224a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="tel:9843229189"><i class="fas fa-phone"></i></a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Tejesshvi VS. Built with passion and code.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
